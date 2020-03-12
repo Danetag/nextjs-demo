@@ -4,4 +4,4 @@ export const IS_SERVER_SIDE = typeof(window) === 'undefined';
 export const IS_CLIENT_SIDE = !IS_SERVER_SIDE;
 
 // APIs
-export const SERVER_ENDPOINT = IS_SERVER_SIDE ? (IS_DEV ? 'http://localhost:3000/api' : 'https://neon.now.sh/api') : '/api';
+export const SERVER_ENDPOINT = IS_SERVER_SIDE ? (IS_DEV ? 'http://localhost:3000/api' : 'nextjs-demo-7th29h4do.now.sh/api') : '/api';
