@@ -1,0 +1,102 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #25527f;
+}
+
+/*
+ * Base structure
+ */
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-family: "Roboto";
+  color: #333;
+  overflow-x: hidden;
+}
+
+// html {
+//   height: 100%;
+// }
+
+// html body {
+//   height: 100%;
+// }
+
+/* Global stuff for now, should be module */
+.nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: #25527f !important;
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+  margin-left: 2rem;
+}
+.nav-link.active {
+  color: #25527f;
+  border-bottom-color: #f3c36e;
+}
+
+.navbar-brand.logo img {
+  width: 200px;
+}
+
+.navbar-collapse {
+  background-color: #fff;
+  &.show {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+
+    .nav-link {
+      margin-left: 0rem;
+      &.active {
+        border: 2px solid #f3c36e;
+      }
+    }
+  }
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
+}
+
+header {
+  height: 100px;
+}
+
+footer {
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  background-color: #25527f;
+  height: 100px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-content {
+  height: 100%;
+  min-height: 700px;
+  padding: 40px 20px;
+}
